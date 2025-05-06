@@ -1,0 +1,184 @@
+/* Style inspiré du monde du football */
+.stadium-container {
+    background: radial-gradient(ellipse, var(--body-bg-color) 0, var(--body-bg-color-2) 100%);    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .pitch {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    background-color: #2a8a2a; /* Vert pelouse */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border: 5px solid #fff;
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  .center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border: 3px dashed white;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+  
+  .prediction-card {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    color: #1a3a8f; /* Bleu maillot */
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .subtitle {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  
+  .stats-form {
+    margin-top: 20px;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .stat-item {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #1a3a8f;
+  }
+  
+  .stat-item label {
+    display: block;
+    color: #1a3a8f;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .stat-item input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .stat-item input:focus {
+    border-color: #1a3a8f;
+    outline: none;
+  }
+  
+  .analyze-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #1a3a8f, #00a8e1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .analyze-btn:hover {
+    background: linear-gradient(to right, #142d6e, #0088b9);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .analyze-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .result-card {
+    margin-top: 30px;
+    background-color: #1a3a8f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .player-value {
+    margin-bottom: 20px;
+  }
+  
+  .player-value span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f8d839; /* Jaune carton */
+  }
+  
+  .stats-summary {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .stat-pair {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .pitch {
+      padding: 15px;
+    }
+    
+    .title {
+      font-size: 22px;
+}
+}
+.stadium-container{
+    margin-top: 70px;
+}

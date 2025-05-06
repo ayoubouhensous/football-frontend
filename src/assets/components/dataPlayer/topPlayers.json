@@ -1,0 +1,263 @@
+[
+    {
+      "id": 1,
+      "name": "Rodri",
+      "position": "CDM",
+      "rating": 92,
+      "country": "Espagne",
+      "club": "Manchester City",
+      "stats": {
+        "pace": 70,
+        "shooting": 80,
+        "passing": 90,
+        "dribbling": 85,
+        "defending": 88,
+        "physical": 85,
+        "goals": 10,
+        "assists": 7
+      },
+      "trophies": {
+        "ballonDOr": 1,
+        "worldCup": 0,
+        "clubTitles": 5
+      },
+      "image": "https://cdn.sofifa.net/players/231/866/24_360.png",
+      "countryFlag": "https://flagcdn.com/es.svg",
+      "clubLogo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"
+    },
+    {
+      "id": 2,
+      "name": "Vinícius Júnior",
+      "position": "LW",
+      "rating": 97,
+      "country": "Brésil",
+      "club": "Real Madrid",
+      "stats": {
+        "pace": 95,
+        "shooting": 89,
+        "passing": 88,
+        "dribbling": 96,
+        "defending": 40,
+        "physical": 70,
+        "goals": 15,
+        "assists": 12
+      },
+      "trophies": {
+        "ballonDOr": 0,
+        "worldCup": 0,
+        "clubTitles": 3
+      },
+      "image": "https://cdn.sofifa.net/players/238/794/24_360.png",
+      "countryFlag": "https://flagcdn.com/br.svg",
+      "clubLogo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+    },
+    {
+      "id": 3,
+      "name": "Jude Bellingham",
+      "position": "CM",
+      "rating": 94,
+      "country": "Angleterre",
+      "club": "Real Madrid",
+      "stats": {
+        "pace": 85,
+        "shooting": 86,
+        "passing": 90,
+        "dribbling": 89,
+        "defending": 80,
+        "physical": 85,
+        "goals": 18,
+        "assists": 10
+      },
+      "trophies": {
+        "ballonDOr": 0,
+        "worldCup": 0,
+        "clubTitles": 4
+      },
+      "image": "https://cdn.sofifa.net/players/252/371/25_120.png",
+      "countryFlag": "https://flagcdn.com/gb.svg",
+      "clubLogo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+    },
+    {
+      "id": 4,
+      "name": "Dani Carvajal",
+      "position": "RB",
+      "rating": 90,
+      "country": "Espagne",
+      "club": "Real Madrid",
+      "stats": {
+        "pace": 85,
+        "shooting": 70,
+        "passing": 84,
+        "dribbling": 82,
+        "defending": 88,
+        "physical": 80,
+        "goals": 5,
+        "assists": 9
+      },
+      "trophies": {
+        "ballonDOr": 0,
+        "worldCup": 1,
+        "clubTitles": 10
+      },
+      "image": "https://cdn.sofifa.net/players/204/963/25_120.png",
+      "countryFlag": "https://flagcdn.com/es.svg",
+      "clubLogo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+    },
+    {
+      "id": 5,
+      "name": "Erling Haaland",
+      "position": "ST",
+      "rating": 96,
+      "country": "Norvège",
+      "club": "Manchester City",
+      "stats": {
+        "pace": 91,
+        "shooting": 95,
+        "passing": 80,
+        "dribbling": 88,
+        "defending": 45,
+        "physical": 92,
+        "goals": 30,
+        "assists": 5
+      },
+      "trophies": {
+        "ballonDOr": 0,
+        "worldCup": 0,
+        "clubTitles": 3
+      },
+      "image": "https://cdn.sofifa.net/players/239/085/24_360.png",
+      "countryFlag": "https://flagcdn.com/no.svg",
+      "clubLogo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"
+    },
+    {
+      "id": 6,
+      "name": "Kylian Mbappé",
+      "position": "ST",
+      "rating": 96,
+      "country": "France",
+      "club": "Real Madrid",
+      "stats": {
+        "pace": 98,
+        "shooting": 93,
+        "passing": 85,
+        "dribbling": 94,
+        "defending": 38,
+        "physical": 80,
+        "goals": 25,
+        "assists": 12
+      },
+      "trophies": {
+        "ballonDOr": 1,
+        "worldCup": 1,
+        "clubTitles": 5
+      },
+      "image": "https://cdn.sofifa.net/players/231/747/24_360.png",
+      "countryFlag": "https://flagcdn.com/fr.svg",
+      "clubLogo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+    },
+    {
+      "id": 7,
+      "name": "Lautaro Martinez",
+      "position": "ST",
+      "rating": 91,
+      "country": "Argentine",
+      "club": "Inter Milan",
+      "stats": {
+        "pace": 87,
+        "shooting": 90,
+        "passing": 78,
+        "dribbling": 86,
+        "defending": 45,
+        "physical": 84,
+        "goals": 18,
+        "assists": 10
+      },
+      "trophies": {
+        "ballonDOr": 0,
+        "worldCup": 1,
+        "clubTitles": 4
+      },
+      "image": "https://cdn.sofifa.net/players/231/478/25_120.png",
+      "countryFlag": "https://flagcdn.com/ar.svg",
+      "clubLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/512px-FC_Internazionale_Milano_2021.svg.png"
+    },
+    {
+      "id": 8,
+      "name": "Lamine Yamal",
+      "position": "RW",
+      "rating": 92,
+      "country": "Espagne",
+      "club": "FC Barcelone",
+      "stats": {
+        "pace": 89,
+        "shooting": 85,
+        "passing": 88,
+        "dribbling": 94,
+        "defending": 40,
+        "physical": 70,
+        "goals": 8,
+        "assists": 6
+      },
+      "trophies": {
+        "ballonDOr": 0,
+        "worldCup": 0,
+        "clubTitles": 2
+      },
+      "image": "https://cdn.sofifa.net/players/277/643/25_120.png",
+      "countryFlag": "https://flagcdn.com/es.svg",
+      "clubLogo": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
+    },
+    {
+      "id": 9,
+      "name": "Toni Kroos",
+      "position": "CM",
+      "rating": 89,
+      "country": "Allemagne",
+      "club": "Real Madrid",
+      "stats": {
+        "pace": 60,
+        "shooting": 82,
+        "passing": 93,
+        "dribbling": 82,
+        "defending": 70,
+        "physical": 75,
+        "goals": 12,
+        "assists": 16
+      },
+      "trophies": {
+        "ballonDOr": 0,
+        "worldCup": 1,
+        "clubTitles": 6
+      },
+      "image": "https://cdn.sofifa.net/players/182/521/24_120.png",
+      "countryFlag": "https://flagcdn.com/de.svg",
+      "clubLogo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+    },
+    {
+      "id": 10,
+      "name": "Harry Kane",
+      "position": "ST",
+      "rating": 95,
+      "country": "Angleterre",
+      "club": "Bayern Munich",
+      "stats": {
+        "pace": 80,
+        "shooting": 94,
+        "passing": 88,
+        "dribbling": 85,
+        "defending": 50,
+        "physical": 82,
+        "goals": 25,
+        "assists": 8
+      },
+      "trophies": {
+        "ballonDOr": 0,
+        "worldCup": 0,
+        "clubTitles": 3
+      },
+      "image": "https://cdn.sofifa.net/players/202/126/24_360.png",
+      "countryFlag": "https://flagcdn.com/gb.svg",
+      "clubLogo": "https://upload.wikimedia.org/wikipedia/en/1/1f/FC_Bayern_München_logo_%282017%29.svg"
+    }
+  ]
+  

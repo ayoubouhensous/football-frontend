@@ -1,0 +1,211 @@
+/* Styles de base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sign-in-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2a437c, #10203b); /* Nouveau dégradé bleu */
+  overflow: hidden;
+}
+
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #5c6bc0; /* Bleu plus clair */
+  border-radius: 50%;
+  animation: particle-move 10s infinite;
+}
+
+@keyframes particle-move {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(100px, 100px); }
+}
+
+.soccer-ball-container {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.soccer-ball-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: spin 6s linear infinite;
+}
+
+.soccer-ball-svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.floating-badges {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.badge-container {
+  background: rgba(92, 107, 192, 0.9); /* Bleu plus clair */
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  animation: float 3s infinite alternate;
+}
+
+.badge-icon {
+  margin-right: 5px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* Formulaire */
+.form-container {
+  
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: 750px; 
+
+}
+
+.header {
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+
+.input-group input {
+  width: 100%;
+  padding: 12px; /* Augmenté pour correspondre à la taille du bouton */
+  font-size: 16px; /* Taille de police identique au bouton */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #5c6bc0; /* Bleu clair */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background: #c5cae9; /* Bleu clair désactivé */
+}
+
+button:hover {
+  background: #3f51b5; /* Bleu plus foncé au survol */
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.sign-up-link {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.sign-up-link a {
+  color: #5c6bc0; /* Bleu clair pour le lien */
+  text-decoration: none;
+}
+.match-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.league-group {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.league-header {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Réduit l'espace entre le logo et le titre */
+  margin-bottom: 20px;
+}
+
+.league-logo {
+  width: 40px; /* Ajuste la taille du logo selon tes préférences */
+  height: auto;
+  margin-right: 10px; /* Réduit l'espace à droite du logo */
+}
+
+.league-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0; /* Enlève tout espace par défaut autour du titre */
+}

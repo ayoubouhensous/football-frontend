@@ -1,0 +1,155 @@
+[
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/250px-Real_Madrid_CF.svg.png",
+      "name": "Real Madrid",
+      "titles": 110,
+      "established": 1902,
+      "city": "Madrid",
+      "stadium": "Santiago Bernabéu"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/250px-FC_Barcelona_%28crest%29.svg.png",
+      "name": "Barcelona",
+      "titles": 101,
+      "established": 1899,
+      "city": "Barcelona",
+      "stadium": "Spotify Camp Nou"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/250px-Manchester_United_FC_crest.svg.png",
+      "name": "Manchester United",
+      "titles": 67,
+      "established": 1878,
+      "city": "Manchester",
+      "stadium": "Old Trafford"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg",
+      "name": "Juventus",
+      "titles": 71,
+      "established": 1897,
+      "city": "Turin",
+      "stadium": "Allianz Stadium"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/2048px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png",
+      "name": "Bayern Munich",
+      "titles": 83,
+      "established": 1900,
+      "city": "Munich",
+      "stadium": "Allianz Arena"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/AC_Milan.png/500px-AC_Milan.png",
+      "name": "AC Milan",
+      "titles": 50,
+      "established": 1899,
+      "city": "Milan",
+      "stadium": "San Siro"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/250px-Arsenal_FC.svg.png",
+      "name": "Arsenal",
+      "titles": 48,
+      "established": 1886,
+      "city": "London",
+      "stadium": "Emirates Stadium"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/ba/Logo_Manchester_City_2016.svg/2048px-Logo_Manchester_City_2016.svg.png",
+      "name": "Manchester City",
+      "titles": 38,
+      "established": 1880,
+      "city": "Manchester",
+      "stadium": "Etihad Stadium"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/512px-FC_Internazionale_Milano_2021.svg.png",
+      "name": "Inter Milan",
+      "titles": 45,
+      "established": 1908,
+      "city": "Milan",
+      "stadium": "San Siro"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/5/51/Logo_Chelsea.svg/210px-Logo_Chelsea.svg.png?20230217231922",
+      "name": "Chelsea",
+      "titles": 34,
+      "established": 1905,
+      "city": "London",
+      "stadium": "Stamford Bridge"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/8/86/Paris_Saint-Germain_Logo.svg/600px-Paris_Saint-Germain_Logo.svg.png?20231024114603",
+      "name": "Paris Saint-Germain",
+      "titles": 51,
+      "established": 1970,
+      "city": "Paris",
+      "stadium": "Parc des Princes"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
+      "name": "Liverpool",
+      "titles": 52,
+      "established": 1892,
+      "city": "Liverpool",
+      "stadium": "Anfield"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/fr/7/77/Ajax_Amsterdam_Logo.svg",
+      "name": "Ajax",
+      "titles": 73,
+      "established": 1900,
+      "city": "Amsterdam",
+      "stadium": "Johan Cruyff Arena"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/a/a2/SL_Benfica_logo.svg/2072px-SL_Benfica_logo.svg.png",
+      "name": "Benfica",
+      "titles": 87,
+      "established": 1904,
+      "city": "Lisbon",
+      "stadium": "Estádio da Luz"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/8/89/Logo_FC_Porto.svg/1200px-Logo_FC_Porto.svg.png",
+      "name": "Porto",
+      "titles": 79,
+      "established": 1893,
+      "city": "Porto",
+      "stadium": "Estádio do Dragão"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/9/93/Logo_Atl%C3%A9tico_Madrid_2017.svg/1200px-Logo_Atl%C3%A9tico_Madrid_2017.svg.png",
+      "name": "Atlético Madrid",
+      "titles": 34,
+      "established": 1903,
+      "city": "Madrid",
+      "stadium": "Metropolitano Stadium"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Sporting_Clube_de_Portugal_%28Logo%29.svg/1200px-Sporting_Clube_de_Portugal_%28Logo%29.svg.png",
+      "name": "Sporting CP",
+      "titles": 54,
+      "established": 1906,
+      "city": "Lisbon",
+      "stadium": "Estádio José Alvalade"
+    },
+    {
+      "logo": "https://1000logos.net/wp-content/uploads/2018/05/Roma-Logo-2013.png",
+      "name": "AS Roma",
+      "titles": 19,
+      "established": 1927,
+      "city": "Rome",
+      "stadium": "Stadio Olimpico"
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/2048px-Borussia_Dortmund_logo.svg.png",
+      "name": "Borussia Dortmund",
+      "titles": 8,
+      "established": 1909,
+      "city": "Dortmund",
+      "stadium": "Signal Iduna Park"
+    }
+  ]
+  

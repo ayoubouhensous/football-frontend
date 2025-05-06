@@ -1,0 +1,56 @@
+.team-sidebar {
+    width: 25%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-left: 2px solid #ddd;
+  }
+  
+  .team-sidebar h3 {
+    font-size: 1.5rem;
+    color: #0d47a1;
+    margin-bottom: 20px;
+  }
+  
+  .team-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .team-sidebar .team-item {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .team-sidebar .team-item:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.02);
+  }
+  
+.team-sidebar .team-icon {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+.team-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.team-link {
+  text-decoration: none;
+  color: #000; /* Ou la couleur de ton choix */
+  display: flex;
+  align-items: center;
+}
+
+.team-link:hover {
+  color: #0033A0; /* Changer la couleur au survol */
+}
+
+.team-icon {
+  margin-right: 10px;
+}

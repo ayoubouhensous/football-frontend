@@ -1,0 +1,145 @@
+/* Team.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.team-container {
+  max-width: 1200px;
+  margin-top:120px;
+
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #050f3c;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.cont{
+    display: flex;
+    justify-content: center;
+  
+}
+
+/* Tableau Desktop */
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  table-layout: fixed;
+}
+
+.team-table th,
+.team-table td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.49);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  white-space: nowrap;
+}
+
+.team-table th {
+  font-weight: 600;
+  background-color: #1e2a3d;
+  color: #ffffff;
+}
+
+.team-table tr:nth-child(even) {
+  background-color: #050f3c;
+}
+
+.team-table tr:hover {
+  background-color: #2b3d57;
+  transition: background-color 0.3s ease;
+}
+
+.team-table .image {
+  width: 80px;
+  padding: 10px;
+}
+
+.team-table img {
+  width: 40px;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Liste Mobile */
+.team-list {
+  display: none;
+}
+
+.list-row {
+  list-style: none;
+  background-color: #1c2b3a;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-row:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.list-row li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.list-row li:last-child {
+  border-bottom: none;
+}
+
+.list-row li[data-label]::before {
+  content: attr(data-label) ": ";
+  font-weight: 600;
+  color: #99ccff;
+}
+
+.list-row .image {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.list-row img {
+  width: 70px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-table {
+    display: none;
+  }
+
+  .team-list {
+    display: block;
+  }
+
+  .list-row li {
+    display: block;
+    text-align: left;
+  }
+
+  .list-row li:first-child {
+    text-align: center;
+  }
+
+  .list-row .city {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .team-list {
+    display: none;
+  }
+
+  .team-table {
+    display: table;
+}
+}

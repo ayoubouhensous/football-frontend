@@ -1,0 +1,36 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px; /* Doit correspondre aux calculs dans Dashboard */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #17198e;
+    color: white;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color:white;
+}
+.logout-button {
+    background: none;
+    border: none;
+    color: inherit; /* Garde la même couleur que les autres liens */
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  .logout-button:hover {
+    color: #4CAF50; /* Change la couleur au survol comme les autres liens */
+  }

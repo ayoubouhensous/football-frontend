@@ -1,0 +1,158 @@
+.news-sidebar {
+  width: 400px;  /* Modifie la largeur ici */
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-height: 90vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 20px;
+  border-left: 4px solid #1a3a8f;
+  margin-bottom: 20px; /* Ajoute de l'espace sous le header */
+
+}
+
+.news-sidebar h3 {
+  font-size: 1.4rem;
+  color: #1a3a8f;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(26, 58, 143, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-sidebar h3::before {
+  content: "⚽";
+  font-size: 1.6rem;
+}
+
+.news-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-sidebar li {
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-left: 3px solid transparent;
+}
+
+.news-sidebar li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid #1a3a8f;
+}
+
+.news-sidebar li a {
+  color: #0353df;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.4;
+}
+
+
+.news-sidebar li a:hover {
+  color: #1a3a8f;
+}
+
+.news-time {
+  display: block;
+  font-size: 0.75rem;
+  color: #718096;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.news-sidebar .loading,
+.news-sidebar .error,
+.news-sidebar .no-news {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.news-sidebar .loading {
+  color: #4a5568;
+}
+
+.news-sidebar .error {
+  color: #e53e3e;
+  background: rgba(229, 62, 62, 0.1);
+}
+
+.news-sidebar .no-news {
+  color: #718096;
+}
+
+.news-badge {
+  background-color: #1a3a8f;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+/* Animation de chargement */
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.loading-pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .news-sidebar {
+      width: 100%;
+      position: static;
+      margin-bottom: 30px;
+      max-height: none;
+ }
+}
+.news-image {
+  width: 100%;  /* Prend 100% de la largeur disponible */
+  max-width: 200px;  /* Limite la largeur maximale à 150px */
+  height: auto;  /* Garde les proportions de l'image */
+  object-fit: cover;  /* Ajuste l'image sans la déformer */
+  margin: 10px 45px;  /* Ajoute un peu d'espace autour de l'image */
+  border-radius: 10px;
+}
+
+.news-item {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  padding: 15px;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-list{
+  margin-top: 20px;
+}
