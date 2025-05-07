@@ -16,22 +16,35 @@ const Prediction = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+    console.log(pac, dri, sho, def, pas, phy);
     
     setTimeout(() => {
-      const averageStats = (
-        parseInt(pac || 0) +
-        parseInt(dri || 0) +
-        parseInt(sho || 0) +
-        parseInt(pas || 0) +
-        parseInt(def || 0) +
-        parseInt(phy || 0)
-      ) / 6;
-      
-      const predictedValue = Math.round(averageStats * 10000 * (averageStats / 10));
-      setPrediction(predictedValue);
-      setIsLoading(false);
-    }, 1500);
-  };
+      fetch("http://127.0.0.1:8000/predicts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          features: [pac, dri, sho, def, pas, phy],
+        }),
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Failed to fetch prediction");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          setPrediction(data.prediction); // assuming response is { prediction: value }
+        })
+        .catch((error) => {
+          console.error("Error fetching prediction:", error);
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    }, 1500);    
+  }
 
   return (
     <div className="stadium-container">
@@ -48,7 +61,7 @@ const Prediction = () => {
                 <input 
                   type="number" 
                   value={pac}
-                  onChange={(e) => setPac(e.target.value)}
+                  onChange={(e) => setPac(parseInt(e.target.value))}
                   min="0" 
                   max="99"
                 />
@@ -59,7 +72,7 @@ const Prediction = () => {
                 <input 
                   type="number" 
                   value={dri}
-                  onChange={(e) => setDri(e.target.value)}
+                  onChange={(e) => setDri(parseInt(e.target.value))}
                   min="0" 
                   max="99"
                 />
@@ -70,7 +83,7 @@ const Prediction = () => {
                 <input 
                   type="number" 
                   value={sho}
-                  onChange={(e) => setSho(e.target.value)}
+                  onChange={(e) => setSho(parseInt(e.target.value))}
                   min="0" 
                   max="99"
                 />
@@ -81,7 +94,7 @@ const Prediction = () => {
                 <input 
                   type="number" 
                   value={def}
-                  onChange={(e) => setDef(e.target.value)}
+                  onChange={(e) => setDef(parseInt(e.target.value))}
                   min="0" 
                   max="99"
                 />
@@ -92,7 +105,7 @@ const Prediction = () => {
                 <input 
                   type="number" 
                   value={pas}
-                  onChange={(e) => setPas(e.target.value)}
+                  onChange={(e) => setPas(parseInt(e.target.value))}
                   min="0" 
                   max="99"
                 />
@@ -103,7 +116,7 @@ const Prediction = () => {
                 <input 
                   type="number" 
                   value={phy}
-                  onChange={(e) => setPhy(e.target.value)}
+                  onChange={(e) => setPhy(parseInt(e.target.value))}
                   min="0" 
                   max="99"
                 />
@@ -143,4 +156,4 @@ const Prediction = () => {
   );
 };
 
-export default Prediction;
+export default Prediction;

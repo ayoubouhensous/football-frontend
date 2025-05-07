@@ -4,7 +4,7 @@ import SignInComponent from './assets/components/SignIn';
 import SignupComponent from './assets/components/SignUp';
 import MainLayout from './assets/components/MainLayout';
 import AcceuilComponent from './assets/components/Accueil';
-import Dashboard from './assets/components/dashboard';
+import Dashboard from './assets/components/Dashboard.jsx';
 import TopPlayers from './assets/components/sidebar/TopPlayers';
 import Prediction from './assets/components/predection/prediction';
 import Team from './assets/components/Team';

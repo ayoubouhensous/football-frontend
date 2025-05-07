@@ -41,6 +41,7 @@
     perspective: 1000px;
     margin: 0 auto;
     cursor: pointer;
+    border-radius: 15px;
   }
   
   .card-inner {
