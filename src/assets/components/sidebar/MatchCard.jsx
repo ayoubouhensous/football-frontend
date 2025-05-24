@@ -51,9 +51,17 @@ const MatchCard = ({ match }) => {
             </strong>
           </div>
 
-                    <div className="match-score">
-                <span>{score.fullTime.home ?? '-'} - {score.fullTime.away ?? '-'}</span>
-              </div>
+          <div className="match-score">
+        {new Date(utcDate) > new Date() && match.prediction ? (
+    // Si le match est dans le futur et qu'une prédiction est disponible
+    <span>{match.prediction.predicted_home_goals} - {match.prediction.predicted_away_goals}</span>
+  ) : (
+    // Sinon, on affiche le score réel
+    <span>{score.fullTime.home ?? '-'} - {score.fullTime.away ?? '-'}</span>
+  )}
+</div>
+
+
               {status === 'LIVE' && <div className="match-time-lapsed">Live</div>}
               <div className="match-referee">
               <p>

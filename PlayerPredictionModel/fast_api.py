@@ -3,7 +3,7 @@ import numpy as np
 import joblib
 
 # Load it later
-loaded_model = joblib.load('random_forest_model.pkl')
+loaded_model = joblib.load('random_forest_model_compress_3.pkl')
 
 app = FastAPI()
 

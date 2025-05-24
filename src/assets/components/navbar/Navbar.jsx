@@ -4,7 +4,7 @@ import '../../css/Navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
-
+  const isAdmin = localStorage.getItem('isAdmin') === 'true';
   const handleLogout = () => {
     // Vider le localStorage
     localStorage.clear();
@@ -17,7 +17,13 @@ const Navbar = () => {
       <h1>FootPro+</h1>
       <ul className="nav-links">
         <li><Link to="/acceuil">Accueil</Link></li>
-        <li><Link to="/prediction">Prediction</Link></li>
+ {/* Afficher le lien admin seulement si c'est un admin */}
+ {isAdmin && (
+          <li>
+            <Link to="/usermanagement">Gestion des utilisateurs</Link>
+          </li>
+        )}    
+            <li><Link to="/prediction">Prediction</Link></li>
         <li><Link to="/joueurs">Joueurs</Link></li>
         <li><Link to="/teams">Teams</Link></li>
         <li><Link to="/dashboard">Dashboard</Link></li>

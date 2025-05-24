@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef,useContext } from 'react';
+import React, { useState, useEffect, useRef, useContext } from 'react';
 import { Mail, Lock, Trophy, Star, Shield, Award } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../Auth/AuthContext';  // <-- Importer AuthContext ici
+import { AuthContext } from '../Auth/AuthContext';
 
 // Animation des particules avec CSS
 const ParticleField = () => {
@@ -24,7 +24,6 @@ const ParticleField = () => {
   );
 };
 
-// Logo 3D animé
 // Logo 3D animé avec effet de rebond
 const SoccerBallIcon3D = () => (
   <div className="soccer-ball-container">
@@ -36,7 +35,6 @@ const SoccerBallIcon3D = () => (
     </div>
   </div>
 );
-
 
 // Badge animé avec effet de lévitation
 const FloatingBadge = ({ icon: Icon, text, className }) => (
@@ -55,103 +53,103 @@ const WaveEffect = () => (
 );
 
 const SignInComponent = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState('');
-    const [errorData, setErrorData] = useState('');
-    const [showSuccess, setShowSuccess] = useState(false);
-    const formRef = useRef(null);
-    const navigate = useNavigate();
-  
-    const { login } = useContext(AuthContext);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [errorData, setErrorData] = useState('');
+  const [showSuccess, setShowSuccess] = useState(false);
+  const formRef = useRef(null);
+  const navigate = useNavigate();
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setIsLoading(true);
-      setError('');
-      try { 
-        const response = await fetch('http://localhost:8080/api/auth/login', {
-          method : 'POST',
-          headers :{
-            'Content-Type': 'application/json'
-          },
-          body : JSON.stringify({email, password})
-        });
-        if (!response.ok) {
-          const er = await response.json();
-          const message = er.message || 'Erreur lors de la connexion';
-          setErrorData(message);
-          throw new Error(message);
-        }
-        
-        setShowSuccess(true);
-        const data = await response.json();
-        console.log('Utilisateur connecté avec succès:', data);
+  const { login } = useContext(AuthContext);
 
-        localStorage.setItem('user', data.name);
-        localStorage.setItem('refresh', data.refresh);
-    
-        login(data.access); // met à jour le context
-        navigate('/dashboard'); // redirection sans rechargement
-            
-        
-  
-      } catch (err) {
-        console.log(err);
-        setError('Échec de la connexion. Veuillez réessayer.');
-      } finally {
-        setIsLoading(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError('');
+    try {
+      const response = await fetch('http://localhost:8080/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email, password })
+      });
+
+      if (!response.ok) {
+        const er = await response.json();
+        const message = er.message || 'Erreur lors de la connexion';
+        setErrorData(message);
+        throw new Error(message);
       }
-    }
-  
-    return (
-      <div className="sign-in-container">
-        <ParticleField />
-        
-  
-        <div className="form-container">
-          <div className="header">
-            <h2>Football IA</h2>
-            <p>L'avenir du football est ici</p>
-          </div>
-  
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <div className="input-group">
-              <label>Email</label>
-              <input
-                type="email"
-                placeholder="Votre email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-  
-            <div className="input-group">
-              <label>Mot de passe</label>
-              <input
-                type="password"
-                placeholder="Votre mot de passe"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-  
-            {errorData && <p style={{color: 'red'}}>{errorData}</p>} {/* Afficher le message d'erreur */}
 
-            <button type="submit" disabled={isLoading}>
-              {isLoading ? 'Connexion...' : 'Se Connecter'}
-            </button>
-  
-            {showSuccess && <div className="success-message">Connexion réussie !</div>}
-  
-            <div className="sign-up-link">
-              Pas encore de compte? <Link to="/signup">Inscrivez-vous</Link>
-            </div>
-          </form>
-        </div>
-        
-      </div>
-    );
+      const data = await response.json();
+      setShowSuccess(true);
+      console.log('Utilisateur connecté avec succès:', data);
+
+      localStorage.setItem('user', data.username);
+      localStorage.setItem('token', data.token);
+      localStorage.setItem('isAdmin', data.admin);
+
+      console.log(data.token)
+
+      login(data.token, data.admin); // met à jour le context
+      navigate('/dashboard');
+    } catch (err) {
+      console.log(err);
+      setError('Échec de la connexion. Veuillez réessayer.');
+    } finally {
+      setIsLoading(false);
+    }
   };
-  export default SignInComponent;
+
+  return (
+    <div className="sign-in-container">
+      <ParticleField />
+
+      <div className="form-container">
+        <div className="header">
+          <h2>Football IA</h2>
+          <p>L'avenir du football est ici</p>
+        </div>
+
+        <form ref={formRef} onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="Votre email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
+          <div className="input-group">
+            <label>Mot de passe</label>
+            <input
+              type="password"
+              placeholder="Votre mot de passe"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+
+          {errorData && <p style={{ color: 'red' }}>{errorData}</p>}
+
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? 'Connexion...' : 'Se Connecter'}
+          </button>
+
+          {showSuccess && <div className="success-message">Connexion réussie !</div>}
+
+          <div className="sign-up-link">
+            Pas encore de compte ? <Link to="/signup">Inscrivez-vous</Link>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default SignInComponent;
